@@ -87,8 +87,6 @@ def contains_scaffold(mol, scaffold):
 
 def get_largest_ring_size(molecule):
     """Calculates the largest ring size in the molecule.
-  Refactored from
-  https://github.com/wengong-jin/icml18-jtnn/blob/master/bo/run_bo.py
   Args:
     molecule: Chem.Mol. A molecule.
   Returns:
@@ -104,11 +102,6 @@ def get_largest_ring_size(molecule):
 
 def penalized_logp(molecule):
     """Calculates the penalized logP of a molecule.
-  Refactored from
-  https://github.com/wengong-jin/icml18-jtnn/blob/master/bo/run_bo.py
-  See Junction Tree Variational Autoencoder for Molecular Graph Generation
-  https://arxiv.org/pdf/1802.04364.pdf
-  Section 3.2
   Penalized logP is defined as:
    y(m) = logP(m) - SA(m) - cycle(m)
    y(m) is the penalized logP,
